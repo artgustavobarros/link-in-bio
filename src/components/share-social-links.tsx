@@ -24,6 +24,9 @@ export function ShareSocialLinks({ url }: ShareSocialLinksProps) {
           <Dialog.Title className="text-2xl">
             Compartilhe este link
           </Dialog.Title>
+          <Dialog.Description className="sr-only">
+            Share this link
+          </Dialog.Description>
           <Dialog.Close>
             <X />
           </Dialog.Close>
@@ -32,25 +35,31 @@ export function ShareSocialLinks({ url }: ShareSocialLinksProps) {
           <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
             <FacebookShareButton url={url} className="flex items-center gap-4">
               <FacebookIcon size={28} round={true} />
-              <button className="text-md">Compartilhe com o facebook</button>
+              <span className="text-xs lg:text-base">
+                Compartilhe com o facebook
+              </span>
             </FacebookShareButton>
           </div>
           <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
             <LinkedinShareButton url={url} className="flex items-center gap-4">
               <LinkedinIcon size={28} round={true} />
-              <button className="text-md">Compartilhe com o LinkedIn</button>
+              <span className="text-xs lg:text-base">
+                Compartilhe com o LinkedIn
+              </span>
             </LinkedinShareButton>
           </div>
           <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
             <TwitterShareButton url={url} className="flex items-center gap-4">
               <XIcon size={28} round={true} />
-              <button className="text-md">Compartilhe com o X</button>
+              <span className="text-xs lg:text-base">Compartilhe com o X</span>
             </TwitterShareButton>
           </div>
           <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
             <WhatsappShareButton url={url} className="flex items-center gap-4">
               <WhatsappIcon size={28} round={true} />
-              <button className="text-md">Compartilhe com o Whatsapp</button>
+              <span className="text-xs lg:text-base">
+                Compartilhe com o Whatsapp
+              </span>
             </WhatsappShareButton>
           </div>
         </section>
