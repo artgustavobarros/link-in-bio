@@ -17,7 +17,7 @@ export default function Home() {
         />
         <h1 className="text-xl font-bold">@oxentesoltaoscachos</h1>
         <span className="text-md font-normal">
-          Links e cupons disponísveis ♥
+          Links e cupons disponíveis ♥
         </span>
         <div className="absolute right-5 top-5 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out">
           <Tag.DialogTag url="http://localhost:3000" />

@@ -29,22 +29,30 @@ export function ShareSocialLinks({ url }: ShareSocialLinksProps) {
           </Dialog.Close>
         </section>
         <section className="space-y-4">
-          <FacebookShareButton url={url} className="flex items-center gap-4">
-            <FacebookIcon size={28} round={true} />
-            <button className="text-md">Compartilhe com o facebook</button>
-          </FacebookShareButton>
-          <LinkedinShareButton url={url} className="flex items-center gap-4">
-            <LinkedinIcon size={28} round={true} />
-            <button className="text-md">Compartilhe com o LinkedIn</button>
-          </LinkedinShareButton>
-          <TwitterShareButton url={url} className="flex items-center gap-4">
-            <XIcon size={28} round={true} />
-            <button className="text-md">Compartilhe com o X</button>
-          </TwitterShareButton>
-          <WhatsappShareButton url={url} className="flex items-center gap-4">
-            <WhatsappIcon size={28} round={true} />
-            <button className="text-md">Compartilhe com o Whatsapp</button>
-          </WhatsappShareButton>
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
+            <FacebookShareButton url={url} className="flex items-center gap-4">
+              <FacebookIcon size={28} round={true} />
+              <button className="text-md">Compartilhe com o facebook</button>
+            </FacebookShareButton>
+          </div>
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
+            <LinkedinShareButton url={url} className="flex items-center gap-4">
+              <LinkedinIcon size={28} round={true} />
+              <button className="text-md">Compartilhe com o LinkedIn</button>
+            </LinkedinShareButton>
+          </div>
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
+            <TwitterShareButton url={url} className="flex items-center gap-4">
+              <XIcon size={28} round={true} />
+              <button className="text-md">Compartilhe com o X</button>
+            </TwitterShareButton>
+          </div>
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-zinc-200">
+            <WhatsappShareButton url={url} className="flex items-center gap-4">
+              <WhatsappIcon size={28} round={true} />
+              <button className="text-md">Compartilhe com o Whatsapp</button>
+            </WhatsappShareButton>
+          </div>
         </section>
       </Dialog.Content>
     </>
