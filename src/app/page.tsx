@@ -20,7 +20,7 @@ export default function Home() {
           Links e cupons disponíveis ♥
         </span>
         <div className="absolute right-5 top-5 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out">
-          <Tag.DialogTag url="http://localhost:3000" />
+          <Tag.DialogTag url="https://oxentesoltaoscachos.vercel.app/" />
         </div>
       </section>
       <section className="space-y-4 text-center text-sm font-light">
