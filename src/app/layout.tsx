@@ -1,13 +1,16 @@
 import type { Metadata } from 'next'
-import { DM_Sans as DMSans } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 
-const dmSans = DMSans({ subsets: ['latin'], variable: '--font-dmsans' })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-poppins',
+})
 
 export const metadata: Metadata = {
   title: '@OxenteSoltaOsCachos',
   description: 'Link-in-bio to hair influencer',
-  colorScheme: 'light dark',
 }
 
 export default function RootLayout({
@@ -16,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={dmSans.className}>
-      <body className="flex h-screen items-start justify-center bg-sky-200 font-semibold text-zinc-900 antialiased dark:bg-sky-200">
+    <html lang="en" className={`${poppins.className}`}>
+      <body className="flex h-screen items-start justify-center bg-black font-semibold text-zinc-100 antialiased">
         {children}
       </body>
     </html>

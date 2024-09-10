@@ -11,7 +11,7 @@ interface TagProps {
 
 export function Tag({ url, title }: TagProps) {
   return (
-    <div className="flex w-80 justify-center rounded-3xl bg-white p-5 shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out dark:bg-white">
+    <div className="flex w-80 justify-center rounded-3xl bg-white p-5 shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out">
       <Link href={url} target="_blank" className="flex-1">
         {title}
       </Link>
