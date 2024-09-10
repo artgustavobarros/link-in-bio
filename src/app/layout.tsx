@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={dmSans.className}>
-      <body className="flex h-screen items-start justify-center bg-sky-200 font-semibold text-zinc-900 antialiased">
+      <body className="flex h-screen items-start justify-center bg-sky-200 font-semibold text-zinc-900 antialiased dark:bg-sky-200">
         {children}
       </body>
     </html>

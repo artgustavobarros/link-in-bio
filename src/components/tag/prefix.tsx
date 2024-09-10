@@ -15,7 +15,7 @@ export function Prefix({ children, url, title }: PrefixProps) {
       <Link
         href={url}
         target="_blank"
-        className="flex h-20 w-80 items-center justify-center rounded-full bg-white p-5 shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out lg:h-[78px] lg:w-[578px] lg:text-base lg:font-semibold"
+        className="flex h-20 w-80 items-center justify-center rounded-full bg-white p-5 shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out lg:h-[78px] lg:w-[578px] lg:text-base lg:font-semibold dark:bg-white"
       >
         <span className="w-52 lg:w-full">{title}</span>
       </Link>
