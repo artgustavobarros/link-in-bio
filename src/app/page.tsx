@@ -7,7 +7,9 @@ export default function Home() {
     <div className="relative space-y-5">
       <section className="flex flex-col items-center justify-center gap-4 pt-16">
         <Image
-          src="/brand.jpg"
+          src={
+            'https://instagram.fmcz1-1.fna.fbcdn.net/v/t51.2885-19/367638985_4819817068142342_2762844206310264767_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fmcz1-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=t1-RnSsqTicQ7kNvgG88Vmq&edm=AJYBtmQBAAAA&ccb=7-5&oh=00_AYBsz8B7R4I9PeDcKeUF5aVDJaJ9o79vnW2Zk5JGJkftqg&oe=66E6A877&_nc_sid=691684'
+          }
           alt=""
           width={100}
           height={100}

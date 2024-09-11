@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: { remotePatterns: [{ hostname: 'instagram.fmcz1-1.fna.fbcdn.net' }] },
+}
 
-export default nextConfig;
+export default nextConfig
