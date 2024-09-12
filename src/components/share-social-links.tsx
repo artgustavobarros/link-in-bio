@@ -34,13 +34,13 @@ export function ShareSocialLinks({ url }: ShareSocialLinksProps) {
           </Dialog.Close>
         </section>
         <section className="space-y-4">
-          <div className="hover:bg-app-hover-dialog flex h-12 w-full items-center rounded-2xl p-6 duration-300">
+          <div className="flex h-12 w-full items-center rounded-2xl p-6 duration-300 hover:bg-app-hover-dialog">
             <FacebookShareButton url={url} className="flex items-center gap-4">
               <FacebookIcon size={28} round={true} />
               <span className="">Compartilhe com o Facebook</span>
             </FacebookShareButton>
           </div>
-          <div className="hover:bg-app-hover-dialog flex h-12 items-center rounded-2xl p-6 duration-300">
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-app-hover-dialog">
             <FacebookMessengerShareButton
               url={url}
               appId="100094151947242"
@@ -51,19 +51,19 @@ export function ShareSocialLinks({ url }: ShareSocialLinksProps) {
               <span className="">Compartilhe com o Messenger</span>
             </FacebookMessengerShareButton>
           </div>
-          <div className="hover:bg-app-hover-dialog flex h-12 items-center rounded-2xl p-6 duration-300">
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-app-hover-dialog">
             <LinkedinShareButton url={url} className="flex items-center gap-4">
               <LinkedinIcon size={28} round={true} />
               <span className="">Compartilhe com o LinkedIn</span>
             </LinkedinShareButton>
           </div>
-          <div className="hover:bg-app-hover-dialog flex h-12 items-center rounded-2xl p-6 duration-300">
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-app-hover-dialog">
             <TwitterShareButton url={url} className="flex items-center gap-4">
               <XIcon size={28} round={true} />
               <span className="">Compartilhe com o X</span>
             </TwitterShareButton>
           </div>
-          <div className="hover:bg-app-hover-dialog flex h-12 items-center rounded-2xl p-6 duration-300">
+          <div className="flex h-12 items-center rounded-2xl p-6 duration-300 hover:bg-app-hover-dialog">
             <WhatsappShareButton url={url} className="flex items-center gap-4">
               <WhatsappIcon size={28} round={true} />
               <span className="">Compartilhe com o Whatsapp</span>
