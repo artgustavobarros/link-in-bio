@@ -16,6 +16,9 @@ const config: Config = {
         app: {
           background: '#A1C9D1',
           text: '#383A36',
+          'top-ellipses': '#728C91',
+          'ellipses-base': '#9B9C9A',
+          'hover-dialog': '#F3F3F1',
         },
         ...blackA,
       },

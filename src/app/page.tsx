@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import * as Tag from '../components/tag'
-import data from '@/links-to-share.json'
+import data from '../data/links-to-share.json'
 
 export default function Home() {
   return (
@@ -18,14 +18,12 @@ export default function Home() {
           className="rounded-full object-cover shadow-sm"
         />
         <h1 className="text-xl font-bold">@oxentesoltaoscachos</h1>
-        <span className="text-md font-normal">
-          Links e cupons disponíveis 😍
-        </span>
-        <div className="absolute right-5 top-5 flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800 shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out">
+        <span className="text-md">Links e cupons disponíveis 😍</span>
+        <div className="bg-app-top-ellipses absolute right-5 top-5 flex h-8 w-8 items-center justify-center rounded-full shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out">
           <Tag.DialogTag url="https://oxentesoltaoscachos.vercel.app/" />
         </div>
       </section>
-      <section className="space-y-4 text-center text-sm font-light">
+      <section className="flex flex-col gap-4 text-center text-sm font-light">
         {data.map((link) => {
           return (
             <Tag.Root key={link.title}>

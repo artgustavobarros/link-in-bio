@@ -1,12 +1,8 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { DM_Sans as DMSans } from 'next/font/google'
 import './globals.css'
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-poppins',
-})
+const dmSams = DMSans({ subsets: ['latin'], variable: '--font-dmsans' })
 
 export const metadata: Metadata = {
   title: '@OxenteSoltaOsCachos',
@@ -19,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${poppins.className}`}>
-      <body className="flex h-screen items-start justify-center bg-black font-semibold text-zinc-100 antialiased">
+    <html lang="en" className={`${dmSams.className}`}>
+      <body className="flex h-screen items-start justify-center bg-app-background text-center font-semibold text-app-text antialiased outline-none">
         {children}
       </body>
     </html>

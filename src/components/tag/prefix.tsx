@@ -10,15 +10,15 @@ interface PrefixProps {
 export function Prefix({ children, url, title }: PrefixProps) {
   const childrenWithProps = cloneElement(children, { url })
   return (
-    <div className="flex">
+    <div className="relative flex items-center justify-center">
       <Link
         href={url}
         target="_blank"
-        className="flex w-80 items-center justify-center rounded-full border-2 bg-zinc-800 p-5 shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out lg:h-[78px] lg:w-[578px] lg:text-base lg:font-semibold"
+        className="flex h-[78px] w-[578px] items-center justify-center rounded-full border-2 bg-white text-base font-semibold shadow-md duration-300 hover:scale-110 hover:shadow-lg hover:ease-in-out"
       >
-        <span className="w-52 font-thin lg:w-full">{title}</span>
+        <span className="w-full font-semibold">{title}</span>
       </Link>
-      <div className="flex -translate-x-12">{childrenWithProps}</div>
+      <span className="absolute right-7 top-8">{childrenWithProps}</span>
     </div>
   )
 }
